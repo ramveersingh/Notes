@@ -1,0 +1,7 @@
+Benefits of Parquet/Columnar format: 
+0. Ref: https://www.youtube.com/watch?v=DxAuj_Ky5aw
+1. Creates files according to columns, e.g if there are 5 columns there will be 5 underneath files.
+2. Schema follows along with data.
+3. It has builtin compression and metadata about what is in the columns. 
+4. It stores info like count, min, max values as metadata enabling queries to be faster.
+5. It supports predicate pushdown e.g if you are searching for date range filter it can eliminate the scan.
