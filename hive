@@ -1,0 +1,6 @@
+1. To convert JSON, TEXT formats to storage and process friendly storage like parquet and avro
+   we can use CTAS syntax. for example  (CREATE TABLES new_key_value_store
+                                         STORED AS PARQUET
+                                         AS
+                                         SELECT col1, col2 from non_columnar_table SORT BY col1) 
+2.                                          
